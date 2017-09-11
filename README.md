@@ -23,17 +23,19 @@ Tensorflow+bilstm+attention+multi label text classify (support Chinese text)
    
     (通过word2vector训练中文的词向量)
    
-   5. I don't publish the data_helper.py , because you can write it according to yourself dataset.
+   5. input_helpers.py is my data processing code , and you can write it according to yourself dataset.
    
-    (根据自己的数据集来写data_helper.py, 将数据集写到trainset 和devset两个变量即可,trainset 和devset中包括所有样本的数据和对应的label)
+    (根据自己的数据集来写input_helpers.py, 将数据集写到trainset 和devset两个变量即可,trainset 和devset中包括所有样本的数据和对应的label)
 
 #python file
 
-Mylstm.py: define the network: Embedding + lstm + mean_pooling
+Lstm_Attention_network.py: define the network
 
-My_bi-lstm.py: define the network: Embedding + bi-lstm + mean_pooling
+My_Attention.py: attention code
 
 train.py: train the network
+
+input_helpers.py : data helper code , data processing
 
 
 注: 欢迎指正讨论.
