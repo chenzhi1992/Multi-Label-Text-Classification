@@ -49,7 +49,7 @@ def attention(inputs, attention_size, time_major=False, return_alphas=False):
         inputs = tf.concat(inputs, 2)
 
     if time_major:
-        # (T,B,D) => (B,T,D)
+        # (B,T,D) => (T,B,D)
         inputs = tf.array_ops.transpose(inputs, [1, 0, 2])
 
     # inputs_shape = inputs.shape
